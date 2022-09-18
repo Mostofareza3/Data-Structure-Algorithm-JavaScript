@@ -24,6 +24,11 @@ function findIndicesSum(array, targetValue) {
     return [];
 }
 
+/* 
+    Time complexity: Big 0(n)
+    Space complexity: Big 0(n)
+*/
+
 array = [1, 2, 3, 5];
 targetValue = 5;
 console.log(findIndicesSum(array, targetValue)); 
