@@ -120,12 +120,3 @@ ans:
 
 
 
-
----------------------------------------------------------------
-----------------Doubly Linked List-----------------------------
----------------------------------------------------------------
-
-1. What is Doubly Linked List?
-ans:
-    Almost identical to singly Linked List, except every node has another pointer, to the previous node!
-

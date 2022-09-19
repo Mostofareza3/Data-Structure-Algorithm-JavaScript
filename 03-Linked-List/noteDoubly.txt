@@ -1,0 +1,32 @@
+
+
+---------------------------------------------------------------
+----------------Doubly Linked List-----------------------------
+---------------------------------------------------------------
+
+1. What is Doubly Linked List?
+ans:
+    Almost identical to singly Linked List, except every node has another pointer, to the previous node!
+
+
+2. Pushing in Doubly Linked List.
+ans:
+    1. Create a new node with the value passed to the function.
+    2. If the head property is null set the head and tail to be the newly created node.
+    3. If not, set the next property on the tail to be that node.
+    4. Set the previous property on the newly created node to be the tail.
+    5. Set the tail to be the newly created node.
+    6. Increment the length by 1.
+    7. Return the Doubly Linked List.
+
+
+3. Popping in Doubly Linked List.
+ans: 
+    Popping pseudo code->
+    1. If there is no head, return undefined.
+    2. Store the current tail in a variable to return later.
+    3. If the length is 1, set the head and tail to be null.
+    4. Update the tail to be the previous Node.
+    5. Set he newTail's next to null.
+    6. Decrement the length.
+    7. Return the value removed.
