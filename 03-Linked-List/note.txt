@@ -1,0 +1,58 @@
+1. What is Linked List?
+ans:
+A data structure that contains a head,tail and length property.
+Linked List consist of nodes, and each node has a value and a pointer to another node or null.
+
+
+2. Comparisons with Array.
+ans:
+    Array->
+        * Indexed in order!
+        * Insertion and deletion can be expensive.
+        * Can quickly be accessed at a specific index.
+    Linked List->
+        * Do not have indexes.
+        * Connected via nodes with a next pointer.
+        * Random access is not allowed.
+
+
+3. Explain Pushing in Linked List.
+ans:
+    Pushing means add new node as last element of the list. steps are explained below->
+    1. create a function that receive a value
+    2. create a new node using the value passed to the function
+    3. if there is no head property on the list, set the head   and tail to be the newly created node.
+    4. Otherwise set the next property on the tail to be the new node and set the tail property on the list to be the newly created node
+    5. Increment the length by one.
+
+
+4. Explain Popping in Linked List.
+ans:
+    Popping means: Removing a node from the end of the Linked List. steps are explained below->
+    1. If there are no nodes in the List, return undefined.
+    2. Loop through the list until you reach the tail.
+    3. Set the next property of the 2nd to last node to be null.
+    4. Decrement the length of the list by 1.
+    5. Return the value of the node removed.
+
+
+5. Explain Shifting implementation in Linked List.
+ans:
+    Shifting means: Removing a node from the beginning of the Linked List. Steps are explained below->
+    1. If there are no nodes, return undefined.
+    2. Store the current head property in a variable.
+    3. Set the head property to be the current head's next.
+    4. Decrement the length of the list by 1.
+    5. Return the value of the node removed.
+
+6. Explain unshifting implementation in Linked List.
+ans: 
+    Adding a new node to the list beginning of the Linked List.
+    Steps are explained below->
+    1. Create a function that receive a value.
+    2. Create a new node using the value passed to the function
+    3. If there is no head property on the list, set the head   and tail to be the newly created node.
+    4. Otherwise set the newly created node's next property to be the current head property on the list.
+    5. Set the head property on the list to be that newly created node.
+    6. Increment the length of the list by 1
+    7. Return the Linked List.
