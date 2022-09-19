@@ -99,13 +99,57 @@ class DoublyLinkedList {
             }
             return current;
         }
+    };
+
+    set(index, value) {
+        let targetedNode = this.get(index);
+        if (!targetedNode) return false;
+        targetedNode.val = value;
+        return true;
+    }
+
+    insert(index, value) {
+        if (index < 0 || index > this.length) return false;
+        // !! only for consistent return true or false
+        if (index === 0) return !!this.unshift(value);
+        if (index === this.length) return !!this.push(value);
+
+        let newNode = new Node(value);
+        let beforeNode = this.get(index - 1);
+        let afterNode = beforeNode.next;
+        beforeNode.next = newNode;
+        newNode.prev = beforeNode;
+        newNode.next = afterNode;
+        afterNode.prev = newNode;
+        this.length++;
+        return true;
+    }
+
+    remove(index) {
+        if (index < 0 || index >= this.length) return false;
+        if (index === 0) return this.shift();
+        if (index === this.length - 1) return this.pop();
+
+        let removedNode = this.get(index);
+        // let beforeNode = removedNode.prev;
+        // let afterNode=removedNode.next;
+        // beforeNode.next=afterNode;
+        // afterNode.prev = beforeNode;
+
+        //shortcut
+        removedNode.prev.next = removedNode.next;
+        removedNode.next.prev = removedNode.prev;
+        removedNode.next = null;
+        removedNode.prev = null;
+        this.length--;
+        return removedNode;
     }
 
 }
 
 let list = new DoublyLinkedList();
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i <= 100; i++) {
     list.push(i);
 }
 

@@ -117,6 +117,10 @@ ans:
 
 
 
-
+**********Big O of singlyLinkedList
+        *Insertion-> 0(1)
+        *Removal-> 0(1) or 0(n)
+        *Searching-> 0(n)
+        *Access-> 0(n)
 
 

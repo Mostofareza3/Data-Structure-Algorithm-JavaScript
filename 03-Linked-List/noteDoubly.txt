@@ -4,6 +4,13 @@
 ----------------Doubly Linked List-----------------------------
 ---------------------------------------------------------------
 
+*********Big O of Doubly Linked List
+        *insertion-> O(1)
+        *Removal-> 0(1)
+        *Searching-> 0(N)
+        *Access-> 0(N)
+
+
 1. What is Doubly Linked List?
 ans:
     Almost identical to singly Linked List, except every node has another pointer, to the previous node!
@@ -30,3 +37,4 @@ ans:
     5. Set he newTail's next to null.
     6. Decrement the length.
     7. Return the value removed.
+
