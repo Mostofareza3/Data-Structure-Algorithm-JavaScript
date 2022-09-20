@@ -26,3 +26,26 @@ ans:
         but we know that shift(), unshift() time complexity is O(n). On the other hand push(),pop() time complexity is O(1). 
 
         so we should always use push & pop methods.
+
+
+5. Big O of Stack.
+    insertion -> 0(1)
+    removal -> 0(1)
+    searching -> 0(n)
+    access -> 0(n)
+
+
+6. What is a Queue?
+    ans:
+        A FIFO (Fist In Fist Out) data structure. Queues exist everywhere! Think about the last time you waited in line for a bus Ticket.
+
+7. How Do we use Queues in programming?
+    ans:
+        - Background Tasks.
+        - Uploading resources.
+        - Printing / Task processing.
+
+8. How we implement Queue using Array?
+ans:
+    1. Array.push() and Array.shift() combination.
+    2. Array.unshift() and Array.pop() combination.
