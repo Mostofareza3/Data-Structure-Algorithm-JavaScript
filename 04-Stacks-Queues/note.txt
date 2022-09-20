@@ -1,0 +1,28 @@
+1. What is a Stack?
+ans:
+    Stack is a LIFO data structure.
+    The last element added to the Stack will be the first element removed from the stack.
+    Just Like a Book Shelf. or you can think about a stack of plates. As you pile it up the last things gets removed fist.
+    visual picture: https://cdn.programiz.com/sites/tutorial2program/files/stack.png
+
+
+2. Where Stacks are used?
+    ans: 
+        * Managing function invocation.
+        * Undo / Redo.
+        * Routing (the history object) is treated like stack.
+
+3. How many ways you can implement a Stack?
+    ans:
+        There is more than one way of implementing a Stack.
+        - Array Implementation.
+        - Linked List Implementation
+
+4. Explain Stack implementation using Array.
+    ans:
+        Here are two major implementation of Stack using the Array.
+        * we can use unshift() and shift() built in method.
+        * or we can use push() and pop() built in method.
+        but we know that shift(), unshift() time complexity is O(n). On the other hand push(),pop() time complexity is O(1). 
+
+        so we should always use push & pop methods.
